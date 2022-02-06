@@ -1,5 +1,8 @@
-#FROM haakco/stage3-ubuntu-20.04-php7.4-lv
-FROM haakco/deploying-laravel-app-ubuntu-20.04-php7.4-lv-wave
+ARG BASE_IMAGE='haakco/deploying-laravel-app-ubuntu-20.04-php8.0-lv'
+
+FROM ${BASE_IMAGE}
+
+FROM haakco/deploying-laravel-app-ubuntu-20.04-php7.4-lv
 
 USER www-data
 
